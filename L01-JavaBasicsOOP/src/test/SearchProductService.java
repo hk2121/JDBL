@@ -5,6 +5,17 @@ import java.util.List;
 public class SearchProductService {
 
     private SortingAlgoInterface sortingAlgoInterface;
+
+    //tight coupling
+    public SearchProductService() {
+        sortingAlgoInterface = new BubbleSortAlgo();
+    }
+
+    //loose coupling
+    public SearchProductService(SortingAlgoInterface sortingAlgoInterface) {
+        this.sortingAlgoInterface = sortingAlgoInterface;
+    }
+
     List<String> searchProduct(){
         return null;
     }
