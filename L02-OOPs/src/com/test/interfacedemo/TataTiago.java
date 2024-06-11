@@ -1,9 +1,30 @@
 package com.test.interfacedemo;
 
 public class TataTiago extends TataCar {
+
+    private String rc;
+    private String puc;
+
+//    @Override
+//    public String getCompanyName() {
+//
+//        return "Tata";
+//    }
+
+
+    public TataTiago(String rc, String puc) {
+        super();
+        this.rc = rc;
+        this.puc = puc;
+    }
+
+    public TataTiago() {
+
+    }
+
     @Override
     public String getPUC() {
-        return null;
+        return puc;
     }
 
     @Override
@@ -13,7 +34,7 @@ public class TataTiago extends TataCar {
 
     @Override
     public String getRC() {
-        return null;
+        return rc;
     }
 
     @Override

@@ -23,3 +23,6 @@ public class PolymorphismDemo {
         System.out.println(p1.toString());
     }
 }
+class A{
+
+}
